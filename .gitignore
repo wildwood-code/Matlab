@@ -1,0 +1,2 @@
+# ignore all subdirectories, which are under separate version control
+**/
