@@ -28,3 +28,5 @@ else
  idx = 0;
  s = [];
 end
+
+% Copyright (c) 2024, Kerry S. Martin, martin@wild-wood.net

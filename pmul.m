@@ -27,3 +27,5 @@ if nargin>1
         p = conv(p, varargin{i});
     end
 end
+
+% Copyright (c) 2024, Kerry S. Martin, martin@wild-wood.net

@@ -11,3 +11,5 @@ elseif ischar(subdir) || isStringScalar(subdir)
 else
     error('subdir must be a string or character vector')
 end
+
+% Copyright (c) 2024, Kerry S. Martin, martin@wild-wood.net

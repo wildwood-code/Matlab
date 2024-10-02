@@ -47,3 +47,5 @@ function b = copyi(mat,s)
 inds    = 1:mc;
 inds    = inds(ones(s,1),:);
 b       = mat(:,inds(:));
+
+% Copyright (c) 2024, Kerry S. Martin, martin@wild-wood.net

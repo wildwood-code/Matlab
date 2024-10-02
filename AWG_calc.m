@@ -1,4 +1,12 @@
 function [awg,awgs] = AWG_calc(size, type)
+% AWG_CALC AWG wire gauge calculator
+%   awg = AWG_CALC(size_mm2)
+%   awg = AWG_CALC(size_mm2, 'CSA')   % or 'MM2' or 'MM^2'
+%   awg = AWG_CALC(diam_mm, 'MM')     % or 'D' or 'DIA'
+%   awg = AWG_CALC(diam_in, 'IN')
+%   awg = AWG_CALC(diam_mil, 'MIL')
+
+% Kerry S. Martin, martin@wild-wood.net
 
 % dia(mm) = 0.127mm * 92^((36-n)/39)
 narginchk(1,2)
@@ -36,3 +44,4 @@ if nargout>=2
     end
 end
 
+% Copyright (c) 2024, Kerry S. Martin, martin@wild-wood.net

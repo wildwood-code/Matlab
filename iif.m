@@ -26,3 +26,5 @@ if isscalar(cond)
 else
     val_out = (cond).*val_true + (~cond).*val_false;
 end
+
+% Copyright (c) 2024, Kerry S. Martin, martin@wild-wood.net

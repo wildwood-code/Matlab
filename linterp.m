@@ -143,4 +143,4 @@ if is_log_y
     yi = exp(yi);
 end
 
-% Kerry S. Martin, martin@wild-wood.net 8/20/2021
+% Copyright (c) 2024, Kerry S. Martin, martin@wild-wood.net

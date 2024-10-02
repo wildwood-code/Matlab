@@ -7,7 +7,29 @@ if nargin==0
     cd('C:\Library\MATLAB')
 elseif ischar(subdir) || isStringScalar(subdir)
     subdir = convertStringsToChars(subdir);
-    cd([ 'C:\Library\MATLAB' filesep subdir ])
+	is_done = false;
+	try
+		cd([ 'C:\Library\MATLAB' filesep subdir ])
+		is_done = true;
+	end
+	if ~is_done
+		try % library directory
+			cd([ 'C:\Library\MATLAB' filesep '+' subdir ])
+			is_done = true;
+		end
+	end
+	if ~is_done
+		try % class directory
+			cd([ 'C:\Library\MATLAB' filesep '@' subdir ])
+			is_done = true;
+		end
+	end
+	if ~is_done
+		error('subdir ''%s'' was not found', subdir)
+	end
+	
 else
     error('subdir must be a character vector')
 end
+
+% Copyright (c) 2024, Kerry S. Martin, martin@wild-wood.net

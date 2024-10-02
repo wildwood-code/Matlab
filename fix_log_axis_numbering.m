@@ -24,3 +24,5 @@ switch haxis.YScale
         New_TickLabel = get(haxis,'YTick');
         set(haxis,'YTickLabel',New_TickLabel);
 end
+
+% Copyright (c) 2024, Kerry S. Martin, martin@wild-wood.net

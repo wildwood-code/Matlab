@@ -20,3 +20,5 @@ if X2<=X1
 end
 
 X = logspace(log10(X1), log10(X2), N);
+
+% Copyright (c) 2024, Kerry S. Martin, martin@wild-wood.net
